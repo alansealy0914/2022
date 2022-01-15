@@ -8,6 +8,9 @@ import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
   
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
+
   
 @NgModule({
   declarations: [IndexComponent, ViewComponent, CreateComponent, EditComponent],
@@ -15,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     PostRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule, // <-- include it in your app module
   ]
 })
 export class PostModule { }
