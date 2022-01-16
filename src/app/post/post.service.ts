@@ -12,6 +12,7 @@ import { Post } from './post';
 export class PostService {
   
   private apiURL = "https://jsonplaceholder.typicode.com";
+  
     
   /***Http Header Options***/
   httpOptions = {
